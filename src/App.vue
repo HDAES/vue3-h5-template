@@ -1,14 +1,14 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import { SdkUrl } from './utils'
+import { isWechat } from './utils/wx'
 
 const activeNames = ref(['1'])
+console.log(SdkUrl)
+console.log(isWechat())
 </script>
 
 <template>
   <van-config-provider theme="light">
-    <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
     <van-collapse v-model="activeNames">
       <van-collapse-item name="1">
         <template #title>
