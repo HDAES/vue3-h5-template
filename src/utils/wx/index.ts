@@ -1,7 +1,5 @@
 // 注册微信 js
-export const initJssdk = (url: string): void => {
-
-}
+export const initJssdk = (url: string): void => {}
 
 //判断运行环境
 export const isWechat = (): boolean => {
